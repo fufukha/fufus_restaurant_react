@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HomePage from '../homepage/homepage';
 import MenuPage from '../menu-page/menu-page';
-import ContactPAge from '../contact-page/contact-page';
+import ContactPage from '../contact-page/contact-page';
 import './sass/app.scss';
 
 export default class App extends Component {

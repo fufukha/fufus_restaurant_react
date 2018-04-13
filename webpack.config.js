@@ -22,7 +22,7 @@ module.exports = {
 					}
 				}          
 			}, {
-				test: /\.scss$/,
+				test: /\.(css)|(scss)$/,
 				use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
@@ -36,12 +36,12 @@ module.exports = {
 			inject: false,
 			template: require('html-webpack-template'),
 			lang: 'en-US',
-			title: 'Comments',
+			title: 'Fufu\'s Restaurant',
 			link: [{
 				href: '/style.css',
 				rel: 'stylesheet',
 				type: 'text/css'
-			}, {
+			},{
 				href: 'https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900',
 				rel: 'stylesheet'
 			}]

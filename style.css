@@ -1,0 +1,184 @@
+.home .promo_1, .home .promo_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+main {
+  grid-area: main; }
+
+.home {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 40% 1fr;
+  grid-template-areas: "promo_1 hero" "promo_2 hero"; }
+  .home .promo_1 {
+    grid-area: promo_1;
+    background: #dc3955;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer; }
+  .home .promo_2 {
+    grid-area: promo_2;
+    background: #483737;
+    font-size: 5em;
+    font-weight: 900;
+    color: #c8b7b7;
+    text-align: center;
+    cursor: pointer; }
+  .home .hero {
+    grid-area: hero;
+    background: url("http://cfile26.uf.tistory.com/image/21319E4E543E62020C1820") center no-repeat;
+    background-size: cover; }
+.menu {
+  background: url("http://cfile26.uf.tistory.com/image/21319E4E543E62020C1820") center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .menu .index-3 {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .menu .overlay {
+    background: pink;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: white;
+    opacity: 0.3; }
+
+.menu {
+  grid-area: main;
+  z-index: 1; }
+  .menu ul {
+    padding: 20px 30px; }
+    .menu ul li {
+      list-style: disc;
+      margin-bottom: 10px; }
+.contact {
+  background: url("http://cfile26.uf.tistory.com/image/21319E4E543E62020C1820") center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .contact .index-3 {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .contact .overlay {
+    background: pink;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: white;
+    opacity: 0.3; }
+
+main {
+  grid-area: main; }
+
+.contact dl {
+  padding: 20px 30px; }
+
+.contact dt {
+  margin-bottom: 10px; }
+
+.contact dd {
+  margin-left: 10px; }
+.container {
+  height: 560px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 20% 10% 70%;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "main main main";
+  justify-content: center; }
+
+header {
+  grid-area: header;
+  align-self: start;
+  color: #241c1c; }
+  header h1 {
+    font-size: 6em; }
+  header h2 {
+    font-size: 1.4em;
+    font-weight: 400; }
+
+nav {
+  grid-area: nav;
+  align-self: center;
+  color: #483737;
+  font-size: 1em; }
+  nav ul {
+    display: flex;
+    background: #e9c6af;
+    justify-content: space-around; }
+    nav ul li {
+      padding: 10px 100px; }
+      nav ul li:hover {
+        cursor: pointer;
+        font-weight: 700; }
+    nav ul li.active {
+      background: #483737;
+      color: #ac9393; }
+      nav ul li.active:hover {
+        font-weight: 500; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+body {
+  background: #6c5353;
+  color: #241c1c;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative; }

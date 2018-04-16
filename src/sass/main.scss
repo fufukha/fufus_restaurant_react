@@ -16,3 +16,23 @@ body {
 	text-transform: capitalize;
   position: relative;
 }
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url("../fonts/MavenPro-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: url("../fonts/MavenPro-Medium.ttf") format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: url("../fonts/MavenPro-Bold.ttf") format('truetype');
+    font-style: 700;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: url("../fonts/MavenPro-Black.ttf") format('truetype');
+    font-weight: 900;
+}
